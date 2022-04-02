@@ -1,0 +1,82 @@
+POST http://localhost:5000/api/products/insert
+Content-Type: Application/json
+
+{
+  "name": "Iphone 11",
+  "type": "Điện thoại",
+  "discount": 1000000,
+  "factory": {
+    "idFactor": "AP-01"
+  },
+  "price": 20000000,
+  "guaranteeTime": 4,
+  "material": "Kính",
+  "debutTime": "2020-08-12"
+}
+
+###
+POST http://localhost:5000/api/products/insert
+Content-Type: Application/json
+
+{
+  "name": "APPLE WATCH S6",
+  "type": "Điện thoại",
+  "discount": "50%",
+  "factory": {
+    "idFactor": "AP-01"
+  },
+  "price": 5000000,
+  "guaranteeTime": 4,
+  "material": "Kính",
+  "debutTime": "2020-08-20"
+}
+
+###
+POST http://localhost:5000/api/products/test-api
+Content-Type: Application/json
+
+{
+  "name": "Iphone 11",
+  "type": "Điện thoại",
+  "discount": 1000000,
+  "factory": {
+    "idFactor": "AP-01"
+  },
+  "price": 20000000,
+  "guaranteeTime": 4,
+  "material": "Kính",
+  "debutTime": "2020-08-12"
+}
+
+###
+GET http://localhost:5000/api/factory
+
+###
+GET http://localhost:5000/api/products
+
+###
+DELETE http://localhost:5000/api/products/delete/Iphone 11
+
+###
+PUT http://localhost:5000/api/products/update/Iphone 11
+Content-Type: Application/json
+
+{
+  "name": "Iphone 11",
+  "productBonus": {
+    "name" : "APPLE WATCH S6"
+  },
+  "type": "Điện thoại",
+  "discount": null,
+  "factory": {
+    "idFactor": "AP-01"
+  },
+  "price": 20000000,
+  "guaranteeTime": 4,
+  "material": "Kính",
+  "debutTime": "2020-08-12"
+}
+
+###
+GET http://localhost:5000/api/factory
+
