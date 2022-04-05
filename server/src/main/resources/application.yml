@@ -1,0 +1,63 @@
+#server:
+#  port: '5000'
+#
+#spring :
+#  profiles:
+#    active: dev
+#---
+#
+#spring:
+#  datasource:
+#    username: root
+#    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/product_db_clone?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+#    password: 84IvQk(Kkd.m(7bl
+#  jpa:
+#    properties:
+#      hibernate:
+#        format_sql: 'true'
+#    hibernate:
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#      ddl-auto: update
+#  config:
+#    activate:
+#      on-profile: dev
+#
+#---
+#
+#spring:
+#  datasource:
+#    username: root
+#    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/product_db_clone?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+#    password: 84IvQk(Kkd.m(7bl
+#  jpa:
+#    properties:
+#      hibernate:
+#        format_sql: 'true'
+#    hibernate:
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#      ddl-auto: update
+#  config:
+#    activate:
+#      on-profile: qa
+#
+#---
+#
+#spring:
+#  datasource:
+#    username: root
+#    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/product_db_clone?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+#    password: 84IvQk(Kkd.m(7bl
+#  jpa:
+#    properties:
+#      hibernate:
+#        format_sql: 'true'
+#    hibernate:
+#      naming:
+#        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#      ddl-auto: update
+#  config:
+#    activate:
+#      on-profile: production
+#
